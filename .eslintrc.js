@@ -1,8 +1,17 @@
 module.exports = {
   root: true,
-  extends: '@react-native-community',
+  extends: ['eslint:recommended', 'plugin:react/recommended'],
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
+  plugins: [
+    'react',
+    'react-native',
+    'react-hooks',
+    '@typescript-eslint',
+  ],
+  rules: {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  },
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
