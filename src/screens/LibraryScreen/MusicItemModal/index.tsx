@@ -1,19 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-import { 
-  Text
-} from 'react-native';
+import {Text} from 'react-native';
 
 type MusicItemModalProptypes = {
-  open: boolean,
-  onClose : () => void,
-}
+  open: boolean;
+  onClose: () => void;
+};
 
 const MusicItemModal = ({open, onClose}: MusicItemModalProptypes) => {
-  return (
-    <Text>Hi</Text>
-  )
-}
+  return <Text>Hi</Text>;
+};
 
 export default MusicItemModal;
-

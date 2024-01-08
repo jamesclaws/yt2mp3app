@@ -8,13 +8,14 @@
  * @format
  */
 
-import React, { useEffect } from 'react';
+import React, {useEffect} from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {NavigationContainer} from '@react-navigation/native';
 import HomeScreen from './src/screens/HomeScreen';
 import LibraryScreen from './src/screens/LibraryScreen';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import TrackPlayer from 'react-native-track-player';
+import colors from './src/colors';
 const Tab = createBottomTabNavigator();
 const App = () => {
   const setupTrackPlayer = async () => {
@@ -22,14 +23,14 @@ const App = () => {
   };
 
   useEffect(() => {
-    setupTrackPlayer()
-  }, [])
-  
+    setupTrackPlayer();
+  }, []);
+
   return (
     <NavigationContainer>
       <Tab.Navigator
         screenOptions={{
-          tabBarActiveTintColor: '#e91e63',
+          tabBarActiveTintColor: colors.red,
         }}>
         <Tab.Screen
           name="Home"

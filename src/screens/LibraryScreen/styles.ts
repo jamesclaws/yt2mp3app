@@ -7,9 +7,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     paddingHorizontal: 25,
   },
-  musicItemContainer: {
-
-  },
+  musicItemContainer: {},
   musicItem: {
     width: '100%',
     display: 'flex',
@@ -21,6 +19,9 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: 'grey',
     paddingVertical: 5,
+  },
+  musicItemText: {
+    textAlign: 'left',
   },
 });
 

@@ -1,16 +1,15 @@
 module.exports = {
   root: true,
-  extends: ['eslint:recommended', 'plugin:react/recommended'],
-  parser: '@typescript-eslint/parser',
-  plugins: [
-    'react',
-    'react-native',
-    'react-hooks',
-    '@typescript-eslint',
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    '@react-native-community',
   ],
+  parser: '@typescript-eslint/parser',
+  plugins: ['react', 'react-native', 'react-hooks', '@typescript-eslint'],
   rules: {
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
   },
   overrides: [
     {
