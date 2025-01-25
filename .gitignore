@@ -146,6 +146,7 @@ package-lock.json
 vendor/
 
 # iOS / CocoaPods
+ios/
 /packages/react-native/template/ios/build/
 /packages/react-native/template/ios/Pods/
 /packages/react-native/template/ios/Podfile.lock
